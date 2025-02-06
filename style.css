@@ -1,0 +1,91 @@
+header {
+  background-color: #b4afaa;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+header h2 {
+  margin: 0;
+  background-color: #e54550;
+}
+
+table.grocery-table {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 20px;
+  margin: 20px;
+  table-layout: fixed;
+}
+
+th.row-header {
+  background-color: #607D8B;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 20px;
+}
+
+td.section {
+  padding: 15px;
+  border: 2px solid #dddddd;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  vertical-align: top;
+  width: 33%;
+  box-sizing: border-box;
+}
+
+.fruits {
+  background-color: #ed9775;
+}
+.vegetables {
+  background-color: #d2f7fe;
+}
+.dairy {
+  background-color: #20f941;
+}
+.grains {
+  background-color: #e54550;
+}
+
+td.section h2 {
+  background-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 0;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+
+.image-cell {
+  padding: 15px;
+  text-align: center;
+}
+
+.image-cell img {
+  width: 100%;
+  max-width: 150px;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul, ol {
+  margin: 10px 20px;
+  padding: 0;
+  list-style-position: inside;
+}
+
+/* Footer Styling */
+footer {
+  text-align: center;
+  background-color: #607D8B;
+  color: white;
+  padding: 10px;
+  font-size: 14px;
+}

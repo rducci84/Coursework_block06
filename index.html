@@ -1,20 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <href rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery List</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Internal CSS */
+    .highlight {
+      background-color: #ff9d3b;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .grocery-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .grocery-table th, .grocery-table td {
+      border: 1px solid #000000;
+      padding: 8px;
+    }
+    .grocery-table th {
+      background-color: #686868;
+      color: white;
+    }
+  </style>
 </head>
 <body>
-    <nav>
-        <!-- Navigation Menu, can go to required page section -->
-          <a href="index.html"> Home </a>
-          <a href="second.html">Second Page</a>
-          <a href="https://www.google.com" class="web-button" target="_blank"
-            >Google</a>
+<!-- Navigation Menu -->
+  <nav>
+      <a href="index.html"> Home </a>
+      <a href="https://www.google.com" target="_blank"
+        >Google</a>
+  </nav>
+  <!-- Header with inline CSS-->
+  <header>
+    <h1 style="color: #002970; text-align: center;">My Very organized Grocery List</h1> <!-- Inline CSS -->
+  </header>
 
-    
+  <!-- Main Table -->
+  <table class="grocery-table">
+    <tr>
+      <th colspan="2" class="row-header">Fruits and Vegetables</th>
+    </tr>
+    <tr>
+      <td class="section fruits">
+        <h2 style="background-color: #ff9d3b;">Fruits</h2>
+        <h3>Fruits:</h3>
+        <ul>
+          <li>Apples</li>
+          <li>Bananas</li>
+          <li>Oranges</li>
+        </ul>
+      </td>
+
+      <td class="section vegetables">
+        <h2 style="background-color: #b4c9f7;">Vegetables</h2>
+        <h3>Veggies:</h3>
+        <ol>
+          <li>Carrots</li>
+          <li>Broccoli</li>
+          <li>Spinach</li>
+        </ol>
+      </td>
+      <!-- Image for Fruits -->
+      <td class="image-cell">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Culinary_fruits_front_view.jpg/1200px-Culinary_fruits_front_view.jpg" alt="Fruits">
+      </td>
+    </tr>
+
+    <tr>
+      <th colspan="2" class="row-header">Breakfast and Cereals</th>
+    </tr>
+    <tr>
+      <td class="section dairy">
+        <h2 style="background-color: #a3ef94;">Dairy</h2>
+        <h3>Milk:</h3>
+        <ul>
+          <li>Milk</li>
+          <li>Cheese</li>
+          <li>Yogurt</li>
+        </ul>
+      </td>
+ 
+      <td class="section grains">
+        <h2 style="background-color: #fac5f6;">Grains</h2>
+        <h3>Grains:</h3>
+        <ol>
+          <li>Rice</li>
+          <li>Oats</li>
+          <li>Quinoa</li>
+        </ol>
+      </td>
+      <!-- Image for Grains -->
+      <td class="image-cell">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStjtE0mJlsLjcsbgT1iIgZOea74u-jB7JvBg&s" alt="Breakfast">
+      </td>
+    </tr>
+  </table>
+
+  <footer>
+    <p>&copy; 2025 Grocery List by RD</p>
+  </footer>
+
 </body>
 </html>
